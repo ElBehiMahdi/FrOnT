@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "crudtuto-Front": {
+    "front": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/crudtuto-Front",
+            "outputPath": "dist/front",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -70,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "crudtuto-Front:build:production"
+              "browserTarget": "front:build:production"
             },
             "development": {
-              "browserTarget": "crudtuto-Front:build:development"
+              "browserTarget": "front:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "crudtuto-Front:build"
+            "browserTarget": "front:build"
           }
         },
         "test": {
@@ -104,7 +104,7 @@
       }
     }
   },
-  "defaultProject": "crudtuto-Front",
+  "defaultProject": "front",
   "cli": {
     "analytics": "b67b3eaf-9a55-4ae0-9975-0239c1b3f481"
   }
